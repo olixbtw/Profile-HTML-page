@@ -4,12 +4,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  line-height: 1.25;
+  background: $color-light;
 }
 
 .container {
   display: block;
   width: 100%;
   max-width: 1440px;
-  // padding: 0 70px;
+  padding: 0 $gap * 2;
   margin: 0 auto;
+
+  @include m-sm {
+    padding: 0 $gap * 4;
+  }
 }

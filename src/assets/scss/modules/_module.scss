@@ -1,40 +1,15 @@
-body {
-  background: red;
-}
-
-$gap: 8px;
-$borad: 4px;
 .profile {
+  display: block;
   position: relative;
   margin-top: -$gap;
 
-  padding: $gap * 2 $gap * 2 $gap * 4;
+  padding: $gap * 2 0 $gap * 4;
   background: white;
   border-radius: $borad * 3 $borad * 3 0 0;
 }
 
 .description {
   margin: 20px 0;
-}
-
-.tags {
-  // width: 100%;
-  width: calc(100% + #{$gap});
-  margin-left: -$gap / 2;
-  margin-bottom: 20px;
-  &__item {
-    border-radius: $borad * 2;
-    padding: 6px 12px;
-    color: $color-dark;
-    background: $color-light;
-    display: inline-block;
-    margin: 0 $gap / 2 $gap;
-
-    &--emphasis {
-      background: $color-blue;
-      color: $color-white;
-    }
-  }
 }
 
 h1 {
@@ -65,6 +40,8 @@ h2 {
   margin-top: 36px;
   &__item {
     margin: 24px auto 0;
+    width: 100%;
+
     &:first-child {
       margin-top: 0;
     }

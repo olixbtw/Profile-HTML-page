@@ -1,7 +1,11 @@
-$padX: 30px;
+$padX: 28px;
 $padY: 15px;
 
 .btn {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+
   background: none;
   border: none;
   outline: none;
@@ -14,17 +18,32 @@ $padY: 15px;
   border-style: solid;
 
   transition: 0.2s all ease-in-out;
-  border-radius: 5px;
+  border-radius: $borad * 2;
 
   color: $color-dark;
   background: $color-white-03;
-  border-color: $color-black;
+  border-color: $color-dark;
   display: block;
-  
-  &--round {
-    padding: $padY;
+  text-align: center;
+
+  &:hover {
+    color: $color-black;
+    background: $color-white-045;
+    border-color: $color-black-075;
+  }
+
+  &.btn--round {
+    padding: 0;
+    height: $padX * 2;
+    width: $padX * 2;
+    line-height: $padX * 2;
     border-radius: 50%;
     border-color: $color-white-03;
     box-shadow: 0px 0px 12px $color-black-02;
+    
+    &:hover {
+      border-color: $color-white-06;
+      box-shadow: 0px 0px 12px $color-black-033;
+    }
   }
 }

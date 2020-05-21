@@ -1,0 +1,29 @@
+.tags {
+  // width: 100%;
+  width: calc(100% + #{$gap});
+  margin-left: -$gap / 2;
+  margin-bottom: 20px;
+  &__item {
+    border-radius: $borad * 2;
+    padding: 6px 12px;
+    color: $color-dark;
+    background: $color-light;
+    display: inline-block;
+    margin: 0 $gap / 2 $gap;
+
+    &--emphasis {
+      background: $color-blue;
+      color: $color-white;
+    }
+  }
+
+  &--narrow {
+    padding-left: 6px;
+    padding-right: 6px;
+
+    @include m-sm {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+}

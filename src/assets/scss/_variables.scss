@@ -2,24 +2,23 @@ $color-black: #000;
 $color-black-075: rgba($color-black, 0.75);
 $color-black-066: rgba($color-black, 0.66);
 $color-black-05: rgba($color-black, 0.5);
+$color-black-033: rgba($color-black, 0.33);
 $color-black-02: rgba($color-black, 0.2);
 $color-black-01: rgba($color-black, 0.1);
 
-
 $color-white: #fff;
 $color-white-06: rgba($color-white, 0.6);
+$color-white-045: rgba($color-white, 0.45);
 $color-white-03: rgba($color-white, 0.3);
 
 $color-dark: #848484;
-$color-light: #F4F4F4;
+$color-light: #f4f4f4;
 
-$color-blue: #2196F3;
-$color-green: #10B56B;
+$color-blue: #2196f3;
+$color-green: #10b56b;
 
-$borad-global: 5px;
-$grid-gap: 20px;
-
-$socialsGap: 7px;
+$gap: 8px;
+$borad: 4px;
 
 @mixin setIconFont() {
   font-family: 'Glyphter';

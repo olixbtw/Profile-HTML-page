@@ -2,9 +2,11 @@
 // @import '../fonts/icons/Glyphter';
 
 @import 'variables';
+@import 'mixins';
 @import 'reset';
 
 @import 'elements/global';
 @import 'elements/btn';
 
 @import 'modules/module';
+@import 'modules/tags';
