@@ -1,0 +1,47 @@
+.slider {
+  position: relative;
+
+  &__body {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+  }
+  &__body li {
+    flex-shrink: 0;
+    width: 100%;
+
+    scroll-snap-align: start;
+  }
+  &__body li img {
+    width: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    position: absolute;
+    bottom: $gap * 5 + 12px;
+    left: 0;
+    width: 100%;
+  }
+  &__controls li {
+    background: $color-white-06;
+    margin: 0 2px;
+    height: 4px;
+    width: 100%;
+
+    &:first-child {
+      border-radius: 2px 0 0 2px;
+      margin-left: 0;
+    }
+    &:last-child {
+      border-radius: 0 2px 2px 0;
+      margin-right: 0;
+    }
+    &.active {
+      background: $color-white;
+    }
+  }
+}

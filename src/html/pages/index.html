@@ -10,15 +10,28 @@
 
 <body>
 
-  <button class="btn-group__item btn btn--round btn--back">back</button>
+  <button class="btn-group__item btn btn--back">back</button>
 
   <div class="slider">
-    <img src="assets/img/photo_place.jpg" alt="avatar">
-    <ul class="slider__control">
-      <li class="slider__control-item"></li>
-      <li class="slider__control-item"></li>
-      <li class="slider__control-item"></li>
+    <ul class="slider__body">
+      <li>
+        <img src="assets/img/photo_place.jpg" alt="avatar">
+      </li>
+      <li>
+        <img src="assets/img/photo_place_bw.jpg" alt="avatar">
+      </li>
     </ul>
+    
+    <ul class="slider__controls container">
+      <li class="slider__control-item active"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+        <li class="slider__control-item"></li>
+      </ul>
   </div>
 
   <main class="profile profile--online">
@@ -68,8 +81,8 @@
 
       <div class="btn-group">
 
-        <button class="btn-group__item btn btn--regular">Report abuse</button>
-        <button class="btn-group__item btn btn--round">like</button>
+        <button class="btn-group__item btn">Report abuse</button>
+        <button class="btn-group__item btn btn--like">like</button>
       </div>
     </div>
   </main>

@@ -21,8 +21,8 @@ $padY: 15px;
   border-radius: $borad * 2;
 
   color: $color-dark;
-  background: $color-white-03;
   border-color: $color-dark;
+  background: $color-white-03;
   display: block;
   text-align: center;
 
@@ -32,17 +32,25 @@ $padY: 15px;
     border-color: $color-black-075;
   }
 
-  &.btn--round {
+  &.btn--back {
     padding: 0;
-    height: $padX * 2;
-    width: $padX * 2;
-    line-height: $padX * 2;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
     border-radius: 50%;
-    border-color: $color-white-03;
+    color: white;
+  }
+  &.btn--like {
+    padding: 0;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border: none;
+    border-radius: 50%;
     box-shadow: 0px 0px 12px $color-black-02;
-    
+
     &:hover {
-      border-color: $color-white-06;
       box-shadow: 0px 0px 12px $color-black-033;
     }
   }
