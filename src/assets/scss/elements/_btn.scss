@@ -1,5 +1,5 @@
-$padX: 16px;
-$padY: 6px;
+$padX: 30px;
+$padY: 15px;
 
 .btn {
   background: none;
@@ -7,16 +7,24 @@ $padY: 6px;
   outline: none;
 
   padding: $padY $padX;
-  font-weight: bold;
   cursor: pointer;
   text-align: center;
 
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: $color-white;
-  background: $color-white;
-  color: $color-black;
 
   transition: 0.2s all ease-in-out;
   border-radius: 5px;
+
+  color: $color-dark;
+  background: $color-white-03;
+  border-color: $color-black;
+  display: block;
+  
+  &--round {
+    padding: $padY;
+    border-radius: 50%;
+    border-color: $color-white-03;
+    box-shadow: 0px 0px 12px $color-black-02;
+  }
 }
