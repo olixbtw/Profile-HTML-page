@@ -32,6 +32,11 @@ $padY: 15px;
     border-color: $color-black-075;
   }
 
+  &__image {
+    display: block;
+    margin: auto;
+  }
+
   &.btn--back {
     padding: 0;
     width: 36px;
