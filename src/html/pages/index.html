@@ -30,18 +30,23 @@
     </ul>
   </div>
 
-  <main id="profile" class="profile profile--online">
+  <main id="profile" class="profile profile--online profile--verified-facebook">
 
     <div class="container">
 
-      <h1 class="profile__h1">Nastya, 29</h1>
+      <h1 class="profile__h1 profile__verification profile__verification--person">
+        <img class="profile__verification-image" src="assets/img/icons/verification_check.svg" alt="verified">
+        Nastya, 29
+      </h1>
 
       <p class="description">I think I've told everything about myself. I do not think my life is boring because every
         day
         confronted with something new and interesting for me</p>
 
       <ul class="tags">
-        <li class="tags__item tags__item--emphasis">7'0.7'</li>
+        <li class="tags__item tags__item--emphasis">
+          7'0.7'
+        </li>
         <li class="tags__item">132 lbs</li>
         <li class="tags__item">Slim</li>
         <li class="tags__item">Blonde</li>
@@ -70,15 +75,21 @@
       <h2>5 ml away</h2>
 
       <h3>Verification</h3>
-      <h2>Nastya is photo-verified</h2>
+      <h2 class="profile__verification profile__verification--photo">
+        <img class="profile__verification-image" src="assets/img/icons/verification_check.svg" alt="verified">
+        Nastya is photo-verified
+      </h2>
 
       <h3>Logged in</h3>
-      <h2>Nastya logged in with facebook</h2>
+      <h2 class="profile__verification profile__verification--facebook">
+        <img class="profile__verification-image" src="assets/img/icons/verification_fb_logo_icon.svg" alt="verified">
+        Nastya is logged in with facebook
+      </h2>
 
       <div class="btn-group">
 
         <button class="btn-group__item btn">Report abuse</button>
-        <button id="like_btn" class="btn-group__item btn btn--like" >
+        <button id="like_btn" class="btn-group__item btn btn--like">
           <!-- <img class="btn__image" src="assets/img/icons/heart.svg" alt="heart icon"> -->
 
           <svg class="btn__image" width="26" height="26" viewBox="0 0 26 26" fill="none">
