@@ -8,8 +8,29 @@
   border-radius: $borad * 3 $borad * 3 0 0;
 }
 
+$onlineIcon_size: 7px;
+.profile--online {
+  .profile__h1 {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      right: -8px - $onlineIcon_size;
+      height: $onlineIcon_size;
+      width: $onlineIcon_size;
+      background: $color-green;
+    }
+  }
+}
+
 .description {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 h1 {
