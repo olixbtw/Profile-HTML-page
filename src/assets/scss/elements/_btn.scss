@@ -19,30 +19,4 @@ $padY: 6px;
 
   transition: 0.2s all ease-in-out;
   border-radius: 5px;
-  
-  &:hover {
-    box-shadow: 0 0 5px $color-black-025;
-  }
-  &--empty {
-    background: transparent;
-    border-style: dashed;
-    color: $color-black-05;
-    border-color: $color-black-05;
-
-    &:hover {
-      color: $color-black-075;
-      border-color: $color-black-075;
-    }
-  }
-  &--big {
-    font-size: 23px;
-    line-height: 28px;
-    padding: $padY * 3 $padX * 3.25;
-  }
-
-  &--black {
-    border-color: $color-black;
-    background: $color-black;
-    color: $color-white;
-  }
 }

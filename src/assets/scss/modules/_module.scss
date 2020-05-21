@@ -1,3 +1,33 @@
 body {
   background: red;
 }
+
+$gap: 8px;
+$borad: 4px;
+.profile {
+  position: relative;
+  margin-top: -$gap;
+
+  padding: $gap * 2 $gap * 2 $gap * 4;
+  background: white;
+  border-radius: $borad * 3;
+}
+
+.tags {
+  // width: 100%;
+  width: calc(100% + #{$gap * 2});
+  margin-left: -$gap;
+  &__item {
+    border-radius: $borad * 2;
+    padding: 6px 12px;
+    color: $color-dark;
+    background: $color-light;
+    display: inline-block;
+    margin: 0 $gap $gap;
+
+    &--emphasis{
+      background: $color-blue;
+      color: $color-white;
+    }
+  }
+}
