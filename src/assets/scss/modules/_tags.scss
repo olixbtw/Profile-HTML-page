@@ -48,10 +48,10 @@
 .tags__item {
 
   $shiftY: -25px;
-  $shiftX: -15px;
+  $shiftX: -17px;
   &--height {
     &:before {
-      background-position: $shiftY * 1 0px;
+      background-position: $shiftY * 1 0;
     }
     &.tags__item--emphasis:before {
       background-position: $shiftY * 1 $shiftX;
