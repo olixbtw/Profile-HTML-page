@@ -1,5 +1,6 @@
 // JS
 import './js/'
+import './js/slider.js'
 
 // SCSS
 import './assets/scss/main.scss'
