@@ -2,7 +2,7 @@
   // width: 100%;
   width: calc(100% + #{$gap});
   margin-left: -$gap / 2;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   &__item {
     border-radius: $borad * 2;
     padding: 6px 10px;

@@ -8,7 +8,7 @@ let sliderItems, sliderButtons, sliderBody, sliderControls;
 let onSliderScroll = throttle(e => {
   let a = sliderItems.length * (sliderBody.scrollLeft + sliderBody.offsetWidth) / sliderBody.scrollWidth
 
-  setActivePointer(parseInt(a) - 1)
+  setActivePointer(parseInt(a))
 }, 500)
 
 function onControlsClick(e) {
